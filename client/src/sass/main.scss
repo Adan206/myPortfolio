@@ -1,0 +1,67 @@
+@import "reset";
+@import "variables";
+@import "grid";
+@import "home";
+@import "about";
+@import "global";
+
+@import "projects/index";
+
+*{
+  font-family: $mainFont;
+  box-sizing: border-box;
+}
+body{
+  background: $bodyBG;
+}
+header{
+  background: $headerBG;
+  overflow: auto;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+
+  .logo {
+    color: white;
+    font-family: cursive;
+    font-size: 30px;
+    display: inline-block;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .menu{
+    display: inline-block;
+    float: right;
+    ul{
+      li{
+        display: inline-block;
+        margin-left: 20px;
+        padding: 10px 20px;
+        a{
+          font-family: $mainFont;
+          font-weight: 500;
+          color: white;
+          font-size: 20px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+}
+h2{
+  display: block;
+  flex-direction: column;
+  margin: 1rem 0;
+  text-align: center;
+  font-family: $displayFont;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.content-area{
+  padding-top: 70px;
+}
